@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">kimmie.dev</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">kimmie.dev</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/circle-transparent-cover.png" alt="Kimmie Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Kimberly Escala</h1>
+            <p class="section_text_p2">A <span class="auto-type"></span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Kimberly Escala Resume.pdf')"
+                >
+                    Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='.#contact'"
+                >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="linkedin profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/kimberly-escala-26b8b0240/'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to know More</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                    src="./assets/about-section-pic.jpg" 
+                    alt="Profile pic" 
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                    <img
+                        src="./assets/experience.png"
+                        alt="Experience Icon"
+                        class="icon"
+                    />
+                    <h3>Certifications</h3>
+                    <p>Meta Front-End Developer<br /> COMPTIA Project+<br /> ITIL 4 FOUNDATION</p>
+                    </div>
+    
+                    <div class="details-container">
+                        <img
+                            src="./assets/education.png"
+                            alt="Education"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelors of Science <br />Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hi! I'm Kimberly Escala, a web designer based in Brooklyn, NY. I graduated with 
+                        a Bachelor's degree in Computer Science at WGU in April 2023. I enjoy creating websites 
+                        because it allows me to express my creativity in both personal and professional settings! I'm passionate in 
+                        learning, developing, and producing functional projects! Want to know more about me? Click 
+                        the arrow on the bottom right to contact me and send me a message!
+                    </p>
+                </div>
+            </div>
+        </div>
+    <img 
+        src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+    />
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>MySql</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-1.png" 
+                        alt="Project 1" 
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-2.png" 
+                        alt="Project 1" 
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-3.png" 
+                        alt="Project 1" 
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+    />
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <p class="contact-p">Click the mail icon to send me an email or the LinkedIn icon to view my LinkedIn!</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/mail.png" 
+                    alt="Email icon" 
+                    class="icon email-icon"
+                />
+                <p><a href="mailto:kimberlykescala@gmail.com">kimberlykescala@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin-icon.png" 
+                    alt="Email icon" 
+                    class="icon contact-icon"
+                />
+                <p><a href="https://linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Kimberly Escala. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Designer", "Content Editor", "Software Designer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+
+        })
+    </script>
+</body>
+</html>
