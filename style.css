@@ -59,6 +59,16 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
+.links {
+    color: rgb(85, 85, 85);
+}
+
+.links:hover {
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
 .logo {
     font-size: 2rem;
     color: white;
@@ -335,23 +345,22 @@ section {
 
 /*flex wrap will flex down to fit container*/
 .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
 
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 article .icon {
     cursor: default;
+    align-self: flex-start;
+    margin-right: 10px;
 }
 
 /* PROJECTS SECTION */
